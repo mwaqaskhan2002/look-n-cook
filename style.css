@@ -1,0 +1,921 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.outline *{
+    border: 1px solid black;
+}
+.outline-2 *{
+    border: 1px solid rgb(240, 234, 234);
+}
+
+:root {
+    --pink-light: rgb(255, 144, 188);
+    --pink-medium: rgb(255, 54, 134);
+    --pink-dark: rgb(207, 9, 87);
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+/* Fonts */
+
+
+.poppins-300 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300 !important;
+    font-style: normal;
+}
+.poppins-400 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400 !important;
+    font-style: normal;
+}
+.poppins-500 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500 !important;
+    font-style: normal;
+}
+.poppins-600 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600 !important;
+    font-style: normal;
+}
+.poppins-700 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700 !important;
+    font-style: normal;
+}
+.poppins-800 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800 !important;
+    font-style: normal;
+}
+
+/* Top bar */
+.top-bar{
+    background-color: black;
+    color: white;
+}
+
+.top-bar a{
+    font-size: clamp(0.75rem, 0.6964rem + 0.2679vw, 0.9375rem);
+}
+
+/* Main navbar */
+
+.main-navbar{
+    background-color: white;
+}
+
+.main-navbar .navbar-nav .nav-link {
+    font-size: 15px;
+    color: black;
+}
+
+/* Hover aur Active state par color shade maintain ya deepen karne ke liye */
+.main-navbar .navbar-nav .nav-link:hover,
+.main-navbar .navbar-nav .nav-link.active {
+    color: var(--pink-medium);
+}
+
+
+/* ---------Off Canvas Cart (Empty and Active)-----------------  */
+.cart-offcanvas-drawer {
+    width: 380px !important;
+}
+
+.cart-offcanvas-drawer .bg-pink-dark {
+    background-color: var(--pink-dark, #a82a57) !important;
+}
+
+/* Items List Styling */
+.cart-item-img {
+    width: 70px;
+    height: 70px;
+}
+
+.qty-selector {
+    width: fit-content;
+    background-color: #f8f9fa;
+}
+
+.qty-selector button {
+    color: #4b5563;
+    font-weight: 600;
+}
+
+.qty-selector button:hover {
+    color: var(--pink-dark, #a82a57);
+}
+
+/* Empty Cart State Styling */
+.empty-cart-icon-box {
+    width: 75px;
+    height: 75px;
+    background-color: #f3f3f3;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #8c7178;
+    font-size: 1.8rem;
+}
+
+/* Action Buttons */
+.btn-pink-dark {
+    background-color: var(--pink-dark, #a82a57) !important;
+    color: #ffffff !important;
+    border: none !important;
+    transition: all 0.3s ease;
+}
+
+.btn-pink-dark:hover {
+    background-color: var(--pink-medium, #cf0957) !important;
+    color: #ffffff !important;
+}
+
+.extra-small {
+    font-size: 0.75rem;
+}
+
+/* ---------Off Canvas Cart (Empty and Active)-----------------  */
+
+/* Login Button Default State */
+.btn.btn-login {
+    color: var(--pink-dark);
+    background-color: #ffffff;
+    border: 1px solid var(--pink-light);
+    border-radius: 25px;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 6px rgba(255, 144, 188, 0.25);
+}
+
+/* Hover & Active Micro-Interactions */
+.btn.btn-login:hover,
+.btn.btn-login:focus,
+.btn.btn-login:active {
+    color: #ffffff !important;
+    background-color: var(--pink-medium) !important;
+    border-color: var(--pink-medium) !important;
+    box-shadow: 0 6px 16px rgba(255, 54, 134, 0.35) !important;
+}
+
+/* -----------Hero Section-------------- */
+/* Hero Slide Layout & Background */
+.home-page .hero-slide-item {
+    position: relative;
+    height: 50vh; 
+    min-height: 450px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Dark Overlay for Text Readability */
+.home-page .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.55);
+    z-index: 1;
+}
+
+.home-page .hero-slide-item h1{
+    font-size: clamp(1.5625rem, 1.1518rem + 2.0536vw, 3rem);
+}
+
+.home-page .hero-slide-item p{
+    font-size: clamp(0.875rem, 0.8393rem + 0.1786vw, 1rem);
+}
+
+/* Custom Pink Accent Text */
+.home-page .text-pink {
+    color: #f7a8b8;
+}
+
+/* Base Style - Force pink background & white text */
+.home-page .btn.learn-more-btn {
+    background-color: var(--pink-dark) !important;
+    color: #ffffff !important;
+    border: none;
+    border-radius: 6px;
+    display: inline-block;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.home-page .btn.learn-more-btn:hover,
+.home-page .btn.learn-more-btn:focus {
+    background-color: var(--pink-medium) !important;
+    color: #ffffff !important;
+}
+
+/* ----------- Food Category Slider Section ----------- */
+
+/* .category-slider-section{
+    background-color: rgba(60, 64, 66, 1);
+} */
+
+.categorySwiper .swiper-slide.auto-width {
+    width: auto !important;
+}
+.category-btn {
+    display: inline-block;
+    padding: 8px 22px;
+    border-radius: 50px;
+    background-color: #f8f9fa;
+    color: var(--pink-dark);
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+    border: 1px solid var(--pink-light);
+    white-space: nowrap;
+    transition: all 0.3s ease;
+}
+
+.category-btn:hover,
+.category-btn.active {
+    background-color: var(--pink-medium);
+    color: #ffffff !important;
+    border-color: var(--pink-medium);
+}
+
+.category-prev::after,
+.category-next::after {
+    display: none !important; /* Swiper default icon text ko remove karta hai */
+}
+
+.category-prev,
+.category-next {
+    color: var(--pink-dark);
+    font-size: 28px; /* FontAwesome icon size */
+    width: auto;
+    height: auto;
+    background: transparent;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.category-prev:hover,
+.category-next:hover {
+    color: var(--pink-medium);
+}
+
+.category-prev {
+    left: -5px;
+}
+
+.category-next {
+    right: -5px;
+}
+
+/* Hide disabled state arrows smoothly */
+.category-prev.swiper-button-disabled,
+.category-next.swiper-button-disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+
+/* ----------- Why Choose Us Section ----------- */
+
+.why-choose-us-section{
+    background-color: rgba(251, 249, 249, 1);
+}
+
+/* Section Heading & Underline */
+.why-choose-us-section .section-title {
+    /* color: var(--pink-dark); */
+    letter-spacing: 1px;
+    font-size: clamp(1.875rem, 1.6964rem + 0.8929vw, 2.5rem);
+}
+
+.why-choose-us-section .section-title span{
+    color: var(--pink-dark);
+}
+
+/* .why-choose-us-section .title-underline {
+    width: 60px;
+    height: 4px;
+    background-color: var(--pink-medium);
+    border-radius: 2px;
+    margin-top: 8px;
+} */
+
+/* Feature Card Styling */
+.why-choose-card {
+    background-color: #ffffff;
+    border: 1px solid rgba(255, 144, 188, 0.3);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(255, 144, 188, 0.08);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+/* Round Icon Circle Wrapper */
+.why-choose-card .icon-circle {
+    width: 64px;
+    height: 64px;
+    background-color: rgba(255, 144, 188, 0.15);
+    color: var(--pink-dark);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    transition: all 0.3s ease;
+}
+
+/* Card Headings */
+.why-choose-card .card-heading {
+    color: #2b2b2b;
+    font-size: 1.25rem;
+}
+
+.why-choose-card .card-text {
+    font-size: clamp(0.75rem, 0.6786rem + 0.3571vw, 1rem);
+    line-height: 1.6;
+}
+
+
+/* ----------- Testimonial Section ----------- */
+
+.testimonial-section{
+    background-color: rgba(251, 249, 249, 1);
+}
+
+.testimonial-section .section-title {
+    /* color: var(--pink-dark); */
+    letter-spacing: 1px;
+    font-size: clamp(1.875rem, 1.6964rem + 0.8929vw, 2.5rem);
+}
+
+.testimonial-section .section-subtitle {
+    color: var(--pink-medium);
+    font-style: oblique;
+}
+
+/* Swiper Flex Alignment for Equal Heights */
+.testimonialSwiper .swiper-wrapper {
+    display: flex;
+    align-items: stretch;
+}
+
+.testimonialSwiper .swiper-slide {
+    height: auto; /* Slide matches tallest card */
+    display: flex;
+}
+
+.testimonial-card {
+    background-color: #ffffff;
+    border: 1px solid rgba(255, 144, 188, 0.3);
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+    transition: all 0.3s ease;
+    width: 100%; /* Stretch card inside swiper slide */
+}
+
+.testimonial-card .review-text {
+    color: #4a5568;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+/* Line clamp (4 lines limit) */
+.review-text.line-clamp-4 {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* Pink Anchor Tag Styling */
+a.toggle-review-btn {
+    color: var(--pink-medium, #ff3686);
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+a.toggle-review-btn:hover {
+    color: var(--pink-dark, #d81b60);
+}
+
+.testimonial-card .client-name {
+    color: #1a202c;
+    font-size: 1.15rem;
+}
+
+.testimonial-card .star-rating {
+    color: #ffc107; /* Gold Star Color */
+    font-size: 0.95rem;
+}
+
+/* Swiper Pagination Customization (Pink Theme) */
+.testimonial-pagination .swiper-pagination-bullet {
+    background-color: var(--pink-light, #ffd1e3);
+    opacity: 0.6;
+    width: 10px;
+    height: 10px;
+    transition: all 0.3s ease;
+}
+
+.testimonial-pagination .swiper-pagination-bullet-active {
+    background-color: var(--pink-medium, #ff3686);
+    opacity: 1;
+    width: 24px;
+    border-radius: 12px;
+}
+
+/* ----------- Footer Section ----------- */
+
+.footer-section {
+    background-color: #111111 !important;
+}
+
+.text-pink {
+    color: var(--pink-medium) !important;
+}
+
+.btn-pink {
+    background-color: var(--pink-medium);
+    color: #ffffff;
+    border: none;
+    transition: background-color 0.2s ease;
+}
+
+.btn-pink:hover {
+    background-color: var(--pink-dark);
+    color: #ffffff;
+}
+
+/* Heading Pink Underline Effect */
+.footer-heading::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 35px;
+    height: 2px;
+    background-color: var(--pink-medium);
+}
+
+/* Hover effects for links */
+.footer-links a:hover {
+    color: #ffffff !important;
+    padding-left: 3px;
+    transition: all 0.2s ease;
+}
+
+/* Social Icon Buttons */
+.social-btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #222222;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: all 0.3s ease;
+}
+
+.social-btn:hover {
+    background-color: var(--pink-medium);
+    color: #ffffff;
+}
+
+/* Newsletter Input & Placeholder Fix */
+.custom-newsletter-input::placeholder {
+    color: #a0aec0 !important; /* Visible light grey placeholder text */
+    opacity: 1;
+}
+
+.custom-newsletter-input:focus {
+    background-color: transparent !important;
+    color: #ffffff !important;
+    border-color: var(--pink-medium) !important;
+    box-shadow: none !important;
+}
+
+/* Ensure Input Group Alignment */
+.newsletter-form .input-group {
+    display: flex;
+    width: 100%;
+}
+
+.newsletter-form .btn-pink {
+    background-color: var(--pink-dark);
+    color: #ffffff;
+    border: 1px solid var(--pink-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.newsletter-form .btn-pink:hover {
+    background-color: var(--pink-light);
+    border-color: var(--pink-light);
+}
+
+/* ----------- Fixed Floating Phone Button (Bottom Right) ----------- */
+/* ----------- Fixed Floating WhatsApp Button ----------- */
+.floating-whatsapp-btn {
+    position: fixed;
+    bottom: 60px;
+    right: 25px;
+    width: 55px;
+    height: 55px;
+    background-color: #25D366; /* Official WhatsApp Green */
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem; /* WhatsApp icon ke liye thoda sa bada size */
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+    z-index: 9999;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.floating-whatsapp-btn:hover {
+    transform: scale(1.1);
+    color: #ffffff;
+    background-color: #1ea952; /* Slightly darker green on hover */
+}
+
+
+/* ------------------ Inner Page Hero Section CSS -------------------- */
+
+/* Overlay to darken background image for contrast */
+.inner-page-hero-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.65);
+    z-index: 0;
+}
+
+.inner-page-hero-section h1{
+    font-size: 48px;
+    /* letter-spacing: -0.9px; */
+}
+
+/* Active Breadcrumb Pink Accent */
+.breadcrumb-item.active.text-pink {
+    color: var(--pink-medium, #ff3686) !important;
+}
+
+/* Breadcrumb Divider & Separator Styling */
+.inner-page-hero-section .breadcrumb-item + .breadcrumb-item::before,
+.breadcrumb-item + .breadcrumb-item::before {
+    content: "/";
+    color: #ffffff !important;
+    opacity: 0.8;
+}
+
+
+/* --------------------- Contact Page ------------------------- */
+
+.contact-section{
+    background-color: rgba(251, 249, 249, 1);
+}
+
+
+.contact-form-card{
+    border: 1px solid rgba(0, 0, 0, 0.09);
+    border-radius: 5px;
+}
+
+.contact-form-card h2{
+    font-size: clamp(1.75rem, 1.3929rem + 1.7857vw, 3rem);
+    /* color: var(--pink-dark); */
+}
+
+/* Form Label Styling */
+.contact-form-card .form-label {
+    font-size: 12px;
+    color: var(--pink-dark);
+}
+
+/* Base Input Control */
+.contact-form-card .form-control {
+    border: 1px solid rgb(146, 149, 154, 0.7);
+    border-radius: 3px;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    font-size: 14px;
+}
+
+/* Click / Focus state: Light Pink Border & Light Pink Shadow */
+.contact-form-card .form-control:focus {
+    border-color: var(--pink-medium) !important;
+    box-shadow: 0 0 4px var(--pink-light) !important; /* Soft Light Pink Glow */
+    outline: none;
+}
+
+/* Submit Button - Screenshot Match */
+/* Submit Button Solid Pink & White Text */
+.btn-submit-pink {
+    background-color: var(--pink-dark) !important; /* Rich Dark Pink */
+    color: #ffffff !important;
+    border: none !important;
+    border-radius: 8px;
+    font-size: 1rem;
+    /* box-shadow: 0 4px 12px rgba(168, 42, 87, 0.25); */
+    transition: all 0.3s ease;
+}
+
+/* Icon & Text Color Override */
+.btn-submit-pink, 
+.btn-submit-pink i {
+    color: #ffffff !important;
+}
+
+/* Hover & Active States */
+.btn-submit-pink:hover {
+    background-color: var(--pink-medium) !important;
+    color: #ffffff !important;
+    box-shadow: 0 6px 16px var(--pink-light);
+}
+
+.btn-submit-pink:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 8px rgba(168, 42, 87, 0.2);
+}
+
+/* Pink Icon Box (Matching Screenshot UI) */
+.pink-icon-box {
+    width: 30px;
+    height: 30px;
+    border-radius: 8px; /* Smooth rounded corners */
+    background-color: var(--pink-dark, #cf0957); /* Matches submit button accent */
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    flex-shrink: 0;
+}
+
+/* Info Card Container border refinement */
+.contact-info-card {
+    border: 1px solid rgba(0, 0, 0, 0.09);
+    border-radius: 5px;
+}
+
+.contact-info-card p, .contact-info-card a{
+    font-size: 12px;
+}
+
+.contact-map-card {
+    border: 1px solid rgba(0, 0, 0, 0.09);
+    border-radius: 5px;
+}
+
+/* Responsive Google reCAPTCHA */
+/* Container Box Alignment */
+.g-recaptcha-wrapper {
+    display: flex;
+    /* justify-content: center; */
+    width: 100%;
+}
+
+/* Auto scale for narrow screens (320px - 400px) */
+@media (max-width: 400px) {
+    .g-recaptcha {
+        transform: scale(0.85);
+        transform-origin: 0 0;
+        -webkit-transform: scale(0.85);
+        -webkit-transform-origin: 0 0;
+    }
+}
+/* --------------------- Contact Page End ------------------------- */
+
+/* --------------------- About Page ------------------------- */
+.about-overview, .about-gallery{
+    background-color: rgba(251, 249, 249, 1);
+}
+
+.about-overview-text h6{
+    font-size: 14px;
+    color: var(--pink-dark);
+    font-style: oblique;
+}
+
+.about-overview-text h1{
+    font-size: 40px;
+}
+
+.about-overview-text h1 span{
+    font-size: 40px;
+    color: var(--pink-dark);
+}
+
+.about-overview-text p{
+    font-size: 14px;
+    font-style: oblique;
+}
+
+/* About Page Image Gallery Grid */
+.about-gallery-text h6{
+    font-size: 14px;
+    color: var(--pink-dark);
+    font-style: oblique;
+}
+
+.about-gallery-text h1 span{
+    color: var(--pink-dark);
+}
+
+
+.about-gallery-grid .gallery-img-wrapper {
+    overflow: hidden;
+    border-radius: 8px;
+    min-height: 180px;
+}
+
+.about-gallery-grid img {
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+/* Optional Subtle Zoom Hover Effect */
+.about-gallery-grid .gallery-img-wrapper:hover img {
+    transform: scale(1.04);
+}
+
+/* Gallery Card Base Style */
+.gallery-card {
+    height: 260px;
+    position: relative;
+    cursor: pointer;
+}
+
+.gallery-card img {
+    height: 100%;
+    transition: transform 0.4s ease;
+}
+
+/* Dark Gradient Overlay (Hidden by Default) */
+.gallery-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.2) 50%, transparent 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Hover Text Transition */
+.gallery-title {
+    font-size: 14px;
+    font-style: oblique;
+    transform: translateY(15px);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover States */
+.gallery-card:hover img {
+    transform: scale(1.08); /* Smooth Zoom */
+}
+
+.gallery-card:hover .gallery-overlay {
+    opacity: 1; /* Fade in Overlay */
+}
+
+.gallery-card:hover .gallery-title {
+    transform: translateY(0); /* Slide up Text */
+}
+
+
+/* Background & Section Layout */
+.about-us .cta-order-section {
+    background-color: #1b1b1b; /* Dark charcoal/black tone */
+}
+
+/* Gold Subtitle */
+.about-us .cta-subtitle {
+    font-size: 14px;
+    color: var(--pink-dark);
+    font-style: oblique;
+}
+
+/* Heading Styling */
+.about-us .cta-heading {
+    font-size: clamp(1.875rem, 1.5536rem + 1.6071vw, 3rem);
+    line-height: 1.2;
+}
+
+.about-us .cta-heading span{
+    color: var(--pink-dark);
+}
+
+
+/* Subtext Styling */
+.about-us .cta-text {
+    font-size: clamp(0.875rem, 0.8036rem + 0.3571vw, 1.125rem);
+    color: #b0b0b0 !important;
+}
+
+/* Pink Button with Soft Glow Effect */
+.about-us .about-us .btn-pink-glow {
+    background-color: var(--pink-dark) !important;
+    border: none;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.about-us .btn-pink-glow:hover {
+    background-color: var(--pink-light);
+    box-shadow: 0 0 30px rgba(233, 30, 99, 0.7); /* Enhanced Glow on Hover */
+}
+
+
+/* ----------About Page End--------------- */
+
+
+
+/* ----------Service Page --------------- */
+.services-section{
+    background-color: rgba(251, 249, 249, 1);
+}
+
+.service-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08) !important;
+}
+
+.service-card .pink-icon-box {
+    width: 90px;
+    height: 90px;
+    background-color: #f06292; /* Bright Pink Tone */
+    border-radius: 8px !important; /* Smooth Rounded Corners */
+}
+
+.service-card .icon-style {
+    font-size: 2.5rem;
+}
+
+.service-card h5{
+    font-size: 20px;
+}
+
+.service-card p{
+    font-size: 14px;
+}
+
+
+.services-page .cta-order-section {
+    background-color: #1b1b1b; 
+}
+
+.services-page .cta-subtitle {
+    font-size: 14px;
+    color: var(--pink-dark);
+    font-style: oblique;
+}
+
+.services-page .cta-heading {
+    font-size: clamp(1.875rem, 1.5536rem + 1.6071vw, 3rem);
+    line-height: 1.2;
+}
+
+.services-page .cta-heading span{
+    color: var(--pink-dark);
+}
+
+.services-page .cta-text {
+    font-size: clamp(0.875rem, 0.8036rem + 0.3571vw, 1.125rem);
+    color: #b0b0b0 !important;
+}
+
+.services-page .btn-pink-glow {
+    background-color: var(--pink-dark) !important;
+    border: none;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.services-page .btn-pink-glow:hover {
+    background-color: var(--pink-light);
+    box-shadow: 0 0 30px rgba(233, 30, 99, 0.7); 
+}
+
