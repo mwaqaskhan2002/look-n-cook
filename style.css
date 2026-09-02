@@ -235,16 +235,20 @@ html {
     font-weight: 600;
     font-size: 14px;
     text-decoration: none;
-    border: 1px solid var(--pink-light);
     white-space: nowrap;
     transition: all 0.3s ease;
 }
 
-.category-btn:hover,
-.category-btn.active {
-    background-color: var(--pink-medium);
+/* Hover State (White Background with Pink Text & Border) */
+.category-btn:hover {
+    background-color: #1B1B1B !important;
     color: #ffffff !important;
-    border-color: var(--pink-medium);
+}
+
+/* Active Selected Tab State */
+.category-btn.active {
+    background-color: var(--pink-dark) !important;
+    color: #ffffff !important;
 }
 
 .category-prev::after,
@@ -284,6 +288,130 @@ html {
     pointer-events: none;
 }
 
+/* ------------------- Food Category Slider Section End ------------------- */
+
+
+
+/* Quantity Button */
+.btn-pink-circle {
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--pink-dark, #e91e63);
+    color: #ffffff;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(233, 30, 99, 0.3);
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    z-index: 5;
+}
+
+.btn-pink-circle:hover {
+    transform: scale(1.08);
+    background-color: var(--pink-medium, #c2185b);
+}
+
+/* Floating Quantity Pill Toggle Box */
+.qty-pill-floating {
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+    height: 40px;
+    background-color: #ffffff;
+    border: 1px solid var(--pink-light, #f8bbd0);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 6px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+    z-index: 6;
+}
+
+.qty-btn {
+    background: transparent;
+    border: none;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    transition: opacity 0.2s;
+}
+
+.qty-btn:hover {
+    opacity: 0.7;
+}
+
+.qty-count {
+    min-width: 24px;
+    text-align: center;
+    font-size: 0.95rem;
+}
+
+/* Toast Dark Pink Theme */
+.bg-pink-dark {
+    background-color: var(--pink-dark, #e91e63) !important;
+}
+
+/* --------------------------Quantity Button End ------------------- */
+/* ----------------------Horizontal Order Cards ------------------------*/
+/* Horizontal Image Card Wrapper Adjustments */
+.horizontal-card-img {
+    height: 140px;
+    object-fit: cover;
+}
+
+.horizontal-cart-card h5{
+    font-size: 18px;
+}
+
+.horizontal-cart-card p{
+    font-size: 14px;
+}
+
+.horizontal-cart-card .price{
+    font-size: 18px;
+}
+
+/* Floating Action Button Placement for Right Image Box */
+.btn-pink-circle, 
+.qty-pill-floating {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+}
+
+/* Optional hover elevation for horizontal cards */
+.card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06) !important;
+}
+/* ----------------------Horizontal Order Cards End------------------------*/
+
+/* ----------------------Category Banner Title--------------- */
+.category-banner-title {
+    background-color: var(--pink-dark); 
+    border-radius: 10px !important;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 0);
+    background-size: 16px 16px;
+}
+
+.category-banner-title h3 {
+    letter-spacing: 2px;
+    font-size: clamp(1.5rem, 1.3929rem + 0.8929vw, 2.5rem);
+}
+<!-- /* ------------------Category Banner Title End ----------------------*/ -->
 
 /* ----------- Why Choose Us Section ----------- */
 

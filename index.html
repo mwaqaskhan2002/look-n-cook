@@ -204,10 +204,6 @@
         
             </div>
         </section>
-
-        
-
-        
         <!-- Category Names Slider Section -->
         <section class="category-slider-section py-3 bg-white shadow-sm sticky-top">
             <div class="container">
@@ -218,7 +214,15 @@
                         <div class="swiper-slide auto-width">
                             <a href="#popular" class="category-btn poppins-500 active">Popular</a>
                         </div>
-                       
+                        <div class="swiper-slide auto-width">
+                            <a href="#corporate-lunch" class="category-btn poppins-500 active">Corporate Lunch</a>
+                        </div>
+                        <div class="swiper-slide auto-width">
+                            <a href="#popular" class="category-btn poppins-500 active">Popular</a>
+                        </div>
+                        <div class="swiper-slide auto-width">
+                            <a href="#corporate-lunch" class="category-btn poppins-500 active">Corporate Lunch</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -230,16 +234,365 @@
                 <i class="swiper-button-next category-next fa-solid fa-circle-chevron-right" style="color: rgb(255, 54, 134)"></i>
             </div>
         </section>
+
         
-        <!-- Content Sections (Matching Slider IDs) -->
+        
+        <!-- Toast Notification Container (Fixed Top Right) -->
+        <div class="toast-container position-fixed top-0 start-50 translate-middle-x py-3" style="z-index: 1090;">
+            <div id="cartToast" class="toast align-items-center text-white py-2 bg-pink-dark border-0 rounded-3 shadow" role="alert"
+                aria-live="assertive" aria-atomic="true">
+                <div class="d-flex">
+                    <div class="toast-body poppins-500" style="font-size: 16px;">
+                        <i class="fa-solid fa-circle-check me-2" style="font-size: 20px;"></i> Item added to your cart!
+                    </div>
+                    <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
+                        aria-label="Close"></button>
+                </div>
+            </div>
+        </div>
+        <!---------------------------------- Popular Item Section ------------------->
         <div class="container py-5">
             <section id="popular" class="mb-5 pt-4">
-                <h3 class="poppins-600 text-dark poppins-500 mb-4">Popular</h3>
-                <div class="p-4 bg-light poppins-400 rounded-3">Popular products here...</div>
-            </section>
+                <h3 class="poppins-600 text-dark mb-2">Popular</h3>
+                <p class="text-secondary poppins-400 mb-4">Most ordered right now</p>
         
-            
+                <div class="row row-cols-lg-4 row-cols-md-2 row-cols-1 g-4">
+        
+                    <!-- Food Card Item -->
+                    <div class="col">
+                        <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden position-relative">
+        
+                            <!-- Image Wrapper with Floating Add Button -->
+                            <div class="position-relative">
+                                <img src="images/singaporean_rice.png" class="card-img-top object-fit-cover"
+                                    alt="Chicken Chowmein" style="height: 200px;">
+        
+                                <!-- Floating Initial Plus Button -->
+                                <button class="add-btn-floating btn-pink-circle" onclick="toggleQtyPill(this, true)">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+        
+                                <!-- Floating Quantity Pill Controller (Hidden Initially) -->
+                                <div class="qty-pill-floating d-none">
+                                    <button class="qty-btn text-danger" onclick="updateQty(this, -1)">
+                                        <i class="fa-solid fa-trash-can"></i>
+                                    </button>
+                                    <span class="qty-count text-pink poppins-600">1</span>
+                                    <button class="qty-btn text-pink" onclick="updateQty(this, 1)">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+        
+                            <!-- Card Body -->
+                            <div class="card-body d-flex flex-column justify-content-between pt-3">
+                                <div>
+                                    <h6 class="poppins-700 text-dark mb-1 fs-5">Chicken Chowmein</h6>
+                                    <p class="card-text text-secondary small poppins-400 mb-2">
+                                        Stir-fried noodles loaded with chicken and fresh vegetables.
+                                    </p>
+                                </div>
+        
+                                <!-- Original & Discounted Price Display -->
+                                <div class="d-flex align-items-center gap-2 mt-2">
+                                    <span class="text-decoration-line-through text-muted small poppins-400">Rs. 800</span>
+                                    <span class="poppins-700 text-dark fs-5">Rs. 720</span>
+                                </div>
+                            </div>
+        
+                        </div>
+                    </div>
+                    <!-- Food Card Item -->
+                    <div class="col">
+                        <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden position-relative">
+        
+                            <!-- Image Wrapper with Floating Add Button -->
+                            <div class="position-relative">
+                                <img src="images/singaporean_rice.png" class="card-img-top object-fit-cover"
+                                    alt="Chicken Chowmein" style="height: 200px;">
+        
+                                <!-- Floating Initial Plus Button -->
+                                <button class="add-btn-floating btn-pink-circle" onclick="toggleQtyPill(this, true)">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+        
+                                <!-- Floating Quantity Pill Controller (Hidden Initially) -->
+                                <div class="qty-pill-floating d-none">
+                                    <button class="qty-btn text-danger" onclick="updateQty(this, -1)">
+                                        <i class="fa-solid fa-trash-can"></i>
+                                    </button>
+                                    <span class="qty-count text-pink poppins-600">1</span>
+                                    <button class="qty-btn text-pink" onclick="updateQty(this, 1)">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+        
+                            <!-- Card Body -->
+                            <div class="card-body d-flex flex-column justify-content-between pt-3">
+                                <div>
+                                    <h6 class="poppins-700 text-dark mb-1 fs-5">Chicken Chowmein</h6>
+                                    <p class="card-text text-secondary small poppins-400 mb-2">
+                                        Stir-fried noodles loaded with chicken and fresh vegetables.
+                                    </p>
+                                </div>
+        
+                                <!-- Original & Discounted Price Display -->
+                                <div class="d-flex align-items-center gap-2 mt-2">
+                                    <span class="text-decoration-line-through text-muted small poppins-400">Rs. 800</span>
+                                    <span class="poppins-700 text-dark fs-5">Rs. 720</span>
+                                </div>
+                            </div>
+        
+                        </div>
+                    </div>
+                    <!-- Food Card Item -->
+                    <div class="col">
+                        <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden position-relative">
+        
+                            <!-- Image Wrapper with Floating Add Button -->
+                            <div class="position-relative">
+                                <img src="images/singaporean_rice.png" class="card-img-top object-fit-cover"
+                                    alt="Chicken Chowmein" style="height: 200px;">
+        
+                                <!-- Floating Initial Plus Button -->
+                                <button class="add-btn-floating btn-pink-circle" onclick="toggleQtyPill(this, true)">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+        
+                                <!-- Floating Quantity Pill Controller (Hidden Initially) -->
+                                <div class="qty-pill-floating d-none">
+                                    <button class="qty-btn text-danger" onclick="updateQty(this, -1)">
+                                        <i class="fa-solid fa-trash-can"></i>
+                                    </button>
+                                    <span class="qty-count text-pink poppins-600">1</span>
+                                    <button class="qty-btn text-pink" onclick="updateQty(this, 1)">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+        
+                            <!-- Card Body -->
+                            <div class="card-body d-flex flex-column justify-content-between pt-3">
+                                <div>
+                                    <h6 class="poppins-700 text-dark mb-1 fs-5">Chicken Chowmein</h6>
+                                    <p class="card-text text-secondary small poppins-400 mb-2">
+                                        Stir-fried noodles loaded with chicken and fresh vegetables.
+                                    </p>
+                                </div>
+        
+                                <!-- Original & Discounted Price Display -->
+                                <div class="d-flex align-items-center gap-2 mt-2">
+                                    <span class="text-decoration-line-through text-muted small poppins-400">Rs. 800</span>
+                                    <span class="poppins-700 text-dark fs-5">Rs. 720</span>
+                                </div>
+                            </div>
+        
+                        </div>
+                    </div>
+                    <!-- Food Card Item -->
+                    <div class="col">
+                        <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden position-relative">
+        
+                            <!-- Image Wrapper with Floating Add Button -->
+                            <div class="position-relative">
+                                <img src="images/singaporean_rice.png" class="card-img-top object-fit-cover"
+                                    alt="Chicken Chowmein" style="height: 200px;">
+        
+                                <!-- Floating Initial Plus Button -->
+                                <button class="add-btn-floating btn-pink-circle" onclick="toggleQtyPill(this, true)">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+        
+                                <!-- Floating Quantity Pill Controller (Hidden Initially) -->
+                                <div class="qty-pill-floating d-none">
+                                    <button class="qty-btn text-danger" onclick="updateQty(this, -1)">
+                                        <i class="fa-solid fa-trash-can"></i>
+                                    </button>
+                                    <span class="qty-count text-pink poppins-600">1</span>
+                                    <button class="qty-btn text-pink" onclick="updateQty(this, 1)">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+        
+                            <!-- Card Body -->
+                            <div class="card-body d-flex flex-column justify-content-between pt-3">
+                                <div>
+                                    <h6 class="poppins-700 text-dark mb-1 fs-5">Chicken Chowmein</h6>
+                                    <p class="card-text text-secondary small poppins-400 mb-2">
+                                        Stir-fried noodles loaded with chicken and fresh vegetables.
+                                    </p>
+                                </div>
+        
+                                <!-- Original & Discounted Price Display -->
+                                <div class="d-flex align-items-center gap-2 mt-2">
+                                    <span class="text-decoration-line-through text-muted small poppins-400">Rs. 800</span>
+                                    <span class="poppins-700 text-dark fs-5">Rs. 720</span>
+                                </div>
+                            </div>
+        
+                        </div>
+                    </div>
+        
+                </div>
+            </section>
         </div>
+
+        <!-------------------------------- Corporate Lunch Section ------------------->
+        <div class="container">
+            <section id="corporate-lunch" class="mb-5 pt-4">
+                <!-- /* ------------------Category Banner Title ----------------------*/ -->
+                <div class="category-banner-title text-center py-5 mb-4">
+                    <h3 class="poppins-800 text-white text-uppercase tracking-wide mb-0">
+                        Corporate Lunch
+                    </h3>          
+                </div>
+        
+                <div class="row row-cols-lg-3 row-cols-md-2 row-cols-1 g-4">
+        
+                    <!-- /* ------------------Horizontal Order Cards ----------------------*/ -->
+                    <div class="col">
+                        <div class="horizontal-cart-card card h-100 shadow-sm border-0 rounded-4 p-3 bg-white">
+                            <div class="row g-0 align-items-center h-100">
+                    
+                                <!-- Left Side: Text Details & Pricing -->
+                                <div class="col-7 pe-2 d-flex flex-column justify-content-between h-100">
+                                    <div>
+                                        <h5 class="poppins-700 text-dark mb-2">Deal 01</h5>
+                                        <p class="card-text text-secondary poppins-400 mb-0">
+                                            1 Chicken Chowmein + 1 Chicken Manchurian
+                                        </p>
+                                    </div>
+                    
+                                    <div class="d-flex align-items-center gap-2 mt-3">
+                                        <span class="price poppins-700 text-dark">Rs. 1400</span>
+                                    </div>
+                                </div>
+                    
+                                <!-- Right Side: Image Wrapper with Floating Action Buttons -->
+                                <div class="col-5">
+                                    <div class="position-relative rounded-4 overflow-hidden bg-light">
+                                        <img src="images/singaporean_rice.png" class="img-fluid w-100 object-fit-cover rounded-4"
+                                            alt="Deal 01" style="height: 140px;">
+                    
+                                        <!-- Initial Plus Button -->
+                                        <button class="add-btn-floating btn-pink-circle" onclick="toggleQtyPill(this, true)">
+                                            <i class="fa-solid fa-plus"></i>
+                                        </button>
+                    
+                                        <!-- Quantity Pill Controller -->
+                                        <div class="qty-pill-floating d-none">
+                                            <button class="qty-btn text-danger" onclick="updateQty(this, -1)">
+                                                <i class="fa-solid fa-trash-can"></i>
+                                            </button>
+                                            <span class="qty-count text-pink poppins-600">1</span>
+                                            <button class="qty-btn text-pink" onclick="updateQty(this, 1)">
+                                                <i class="fa-solid fa-plus"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                            </div>
+                        </div>              
+                    </div>
+                    <div class="col">
+                        <div class="horizontal-cart-card card h-100 shadow-sm border-0 rounded-4 p-3 bg-white">
+                            <div class="row g-0 align-items-center h-100">
+                    
+                                <!-- Left Side: Text Details & Pricing -->
+                                <div class="col-7 pe-2 d-flex flex-column justify-content-between h-100">
+                                    <div>
+                                        <h5 class="poppins-700 text-dark mb-2">Deal 01</h5>
+                                        <p class="card-text text-secondary poppins-400 mb-0">
+                                            1 Chicken Chowmein + 1 Chicken Manchurian
+                                        </p>
+                                    </div>
+                    
+                                    <div class="d-flex align-items-center gap-2 mt-3">
+                                        <span class="poppins-700 text-dark">Rs. 1400</span>
+                                    </div>
+                                </div>
+                    
+                                <!-- Right Side: Image Wrapper with Floating Action Buttons -->
+                                <div class="col-5">
+                                    <div class="position-relative rounded-4 overflow-hidden bg-light">
+                                        <img src="images/singaporean_rice.png" class="img-fluid w-100 object-fit-cover rounded-4"
+                                            alt="Deal 01" style="height: 140px;">
+                    
+                                        <!-- Initial Plus Button -->
+                                        <button class="add-btn-floating btn-pink-circle" onclick="toggleQtyPill(this, true)">
+                                            <i class="fa-solid fa-plus"></i>
+                                        </button>
+                    
+                                        <!-- Quantity Pill Controller -->
+                                        <div class="qty-pill-floating d-none">
+                                            <button class="qty-btn text-danger" onclick="updateQty(this, -1)">
+                                                <i class="fa-solid fa-trash-can"></i>
+                                            </button>
+                                            <span class="qty-count text-pink poppins-600">1</span>
+                                            <button class="qty-btn text-pink" onclick="updateQty(this, 1)">
+                                                <i class="fa-solid fa-plus"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                            </div>
+                        </div>              
+                    </div>
+                    <div class="col">
+                        <div class="horizontal-cart-card card h-100 shadow-sm border-0 rounded-4 p-3 bg-white">
+                            <div class="row g-0 align-items-center h-100">
+                    
+                                <!-- Left Side: Text Details & Pricing -->
+                                <div class="col-7 pe-2 d-flex flex-column justify-content-between h-100">
+                                    <div>
+                                        <h5 class="poppins-700 text-dark mb-2">Deal 01</h5>
+                                        <p class="card-text text-secondary poppins-400 mb-0">
+                                            1 Chicken Chowmein + 1 Chicken Manchurian
+                                        </p>
+                                    </div>
+                    
+                                    <div class="d-flex align-items-center gap-2 mt-3">
+                                        <span class="poppins-700 text-dark">Rs. 1400</span>
+                                    </div>
+                                </div>
+                    
+                                <!-- Right Side: Image Wrapper with Floating Action Buttons -->
+                                <div class="col-5">
+                                    <div class="position-relative rounded-4 overflow-hidden bg-light">
+                                        <img src="images/singaporean_rice.png" class="img-fluid w-100 object-fit-cover rounded-4"
+                                            alt="Deal 01" style="height: 140px;">
+                    
+                                        <!-- Initial Plus Button -->
+                                        <button class="add-btn-floating btn-pink-circle" onclick="toggleQtyPill(this, true)">
+                                            <i class="fa-solid fa-plus"></i>
+                                        </button>
+                    
+                                        <!-- Quantity Pill Controller -->
+                                        <div class="qty-pill-floating d-none">
+                                            <button class="qty-btn text-danger" onclick="updateQty(this, -1)">
+                                                <i class="fa-solid fa-trash-can"></i>
+                                            </button>
+                                            <span class="qty-count text-pink poppins-600">1</span>
+                                            <button class="qty-btn text-pink" onclick="updateQty(this, 1)">
+                                                <i class="fa-solid fa-plus"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                            </div>
+                        </div>              
+                    </div>
+        
+                </div>
+            </section>
+        </div>
+
+
 
         <!-- Why Choose Us Section -->
         <section class="why-choose-us-section py-5">
