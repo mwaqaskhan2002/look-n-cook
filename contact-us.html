@@ -22,6 +22,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="config.js"></script>
 
 </head>
 
@@ -201,10 +202,9 @@
                                 </div>
 
                                 <div class="mb-4 d-flex justify-content-center justify-content-md-start">
-                                    <div class="g-recaptcha-wrapper">
-                                        <!-- Apni Google Site Key 'data-sitekey' attribute mein lagayein -->
-                                        <div class="g-recaptcha"
-                                            data-sitekey="SITE_KEY">
+                                    <div class="col-12 mb-4 d-flex justify-content-start">
+                                        <div class="captcha-responsive-wrapper">
+                                            <div id="recaptcha-container"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -399,6 +399,20 @@
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
+    <script>
+        window.addEventListener('load', function () {
+            const recaptchaContainer = document.getElementById('recaptcha-container');
+            const siteKey = window.CONFIG?.RECAPTCHA_SITE_KEY;
+
+            if (recaptchaContainer && siteKey && typeof grecaptcha !== 'undefined') {
+                grecaptcha.ready(function () {
+                    grecaptcha.render('recaptcha-container', {
+                        'sitekey': siteKey
+                    });
+                });
+            }
+        });
+    </script>
 </body>
 
 </html>
