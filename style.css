@@ -401,7 +401,7 @@ html {
 /* ----------------------Category Banner Title--------------- */
 .category-banner-title {
     background-color: var(--pink-dark); 
-    border-radius: 10px !important;
+    border-radius: 25px !important;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
     background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 0);
     background-size: 16px 16px;
