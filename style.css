@@ -57,13 +57,23 @@ html {
 }
 
 /* Top bar */
-.top-bar{
-    background-color: black;
-    color: white;
+.top-bar {
+    background-color: #1f1f1f; /* Dark premium background */
+    font-size: 14px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-.top-bar a{
-    font-size: clamp(0.75rem, 0.6964rem + 0.2679vw, 0.9375rem);
+.top-bar-link {
+    color: #f8bbd0 !important; /* Soft pink text */
+    transition: color 0.3s ease;
+}
+
+.top-bar-link:hover {
+    color: #ffffff !important; /* White on hover */
+}
+
+.top-bar-link i {
+    color: var(--pink-medium, #cf0957); /* Accent pink icons */
 }
 
 /* Main Navbar Styling */
