@@ -66,23 +66,61 @@ html {
     font-size: clamp(0.75rem, 0.6964rem + 0.2679vw, 0.9375rem);
 }
 
-/* Main navbar */
-
-.main-navbar{
-    background-color: white;
+/* Main Navbar Styling */
+.main-navbar {
+    background-color: #ffffff;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.03);
 }
 
 .main-navbar .navbar-nav .nav-link {
     font-size: 15px;
-    color: black;
+    color: #333333;
+    font-weight: 500;
+    position: relative;
+    padding-bottom: 6px;
+    transition: color 0.3s ease;
 }
 
-/* Hover aur Active state par color shade maintain ya deepen karne ke liye */
+/* Hover & Active Pink Color Effect */
 .main-navbar .navbar-nav .nav-link:hover,
 .main-navbar .navbar-nav .nav-link.active {
-    color: var(--pink-medium);
+    color: var(--pink-dark, #a82a57) !important;
 }
 
+/* Sleek Bottom Indicator Line for Active & Hover Links (Desktop view) */
+@media (min-width: 992px) {
+    .main-navbar .navbar-nav .nav-link::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 3px;
+        background-color: var(--pink-dark, #a82a57);
+        border-radius: 2px;
+        transition: width 0.3s ease;
+    }
+
+    .main-navbar .navbar-nav .nav-link:hover::after,
+    .main-navbar .navbar-nav .nav-link.active::after {
+        width: 100%;
+    }
+}
+
+/* Premium Pink Gradient Button Style */
+.btn-pink-gradient {
+    background-color: var(--pink-dark, #a82a57);
+    color: #ffffff;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-pink-gradient:hover {
+    background-color: var(--pink-medium, #cf0957);
+    color: #ffffff;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(168, 42, 87, 0.25);
+}
 
 /* ---------Off Canvas Cart (Empty and Active)-----------------  */
 .cart-offcanvas-drawer {

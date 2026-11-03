@@ -47,59 +47,62 @@
     </section>
 
 
-    <nav class="main-navbar navbar navbar-expand-lg border">
+    <nav class="main-navbar navbar navbar-expand-lg border-bottom sticky-top">
         <div class="container-lg">
-            <!-- Logo height reduced to 55px to make navbar thin -->
-            <a class="navbar-brand py-0" href="/">
-                <img src="images/look-n-cook-logo.png" alt="Look N Cook Logo" style="height: 100px" class="img-fluid">
+            <!-- Brand Logo -->
+            <a class="navbar-brand py-0 d-flex align-items-center gap-2" href="/">
+                <img src="images/look-n-cook-logo.png" alt="Look N Cook Logo" style="height: 75px; width: auto;"
+                    class="img-fluid">
             </a>
-
+    
+            <!-- Right Icons (Cart & Mobile Toggler) -->
             <div class="d-flex align-items-center gap-3 ms-auto ms-lg-0 order-lg-last">
-                <!-- Cart Trigger -->
-                <a href="#offcanvasCart" class="text-dark me-2" data-bs-toggle="offcanvas" role="button"
+                <a href="#offcanvasCart" class="text-dark position-relative me-2" data-bs-toggle="offcanvas" role="button"
                     aria-controls="offcanvasCart">
                     <i class="fa-solid fa-cart-shopping fs-5"></i>
                 </a>
-
-                <!-- Navigation Toggler -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+    
+                <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
             </div>
-
-            <!-- Main Navigation Offcanvas -->
+    
+            <!-- Navbar Links & Offcanvas Menu -->
             <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
                 aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
                     <a class="offcanvas-title" id="offcanvasNavbarLabel" href="/">
-                        <img src="images/look-n-cook-logo-1.svg" alt="Look N Cook Logo"
-                            style="height: 60px; width: auto;" class="img-fluid">
+                        <img src="images/look-n-cook-logo-1.svg" alt="Look N Cook Logo" style="height: 75px; width: auto;"
+                            class="img-fluid">
                     </a>
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
-
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 align-items-lg-center gap-4 poppins-400">
+    
+                <div class="offcanvas-body align-items-center">
+                    <!-- Nav Links with Active Indicator Support -->
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 align-items-lg-center gap-lg-4 poppins-500">
                         <li class="nav-item">
-                            <a class="nav-link py-lg-1" href="/">Home</a>
+                            <a class="nav-link" href="/">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link py-lg-1 active" href="about.html" aria-current="page" >About</a>
-                        </li>
-                        <!-- <li class="nav-item">
-                            <a class="nav-link py-lg-1" href="#">Menu</a>
-                        </li> -->
-                        <li class="nav-item">
-                            <a class="nav-link py-lg-1" href="services.html">Services</a>
+                            <a class="nav-link active" aria-current="page" href="about.html">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link py-lg-1" href="contact-us.html">Contact Us</a>
+                            <a class="nav-link" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact-us.html">Contact Us</a>
                         </li>
                     </ul>
-                    <div class="d-flex align-items-center">
-                        <button class="btn btn-login poppins-700 btn-sm me-3 px-4 py-2" type="button">Login</button>
-                    </div>
+    
+                    <!-- CTA Button -->
+                    <!-- <div class="d-flex align-items-center mt-3 mt-lg-0">
+                            <a href="services.html"
+                                class="btn btn-pink-gradient poppins-600 btn-sm px-4 py-2 rounded-pill shadow-sm">
+                                <i class="fa-solid fa-utensils me-2"></i> Order Now
+                            </a>
+                        </div> -->
                 </div>
             </div>
         </div>
