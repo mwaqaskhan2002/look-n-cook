@@ -78,8 +78,9 @@ html {
 
 /* Main Navbar Styling */
 .main-navbar {
-    background-color: #ffffff;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.03);
+    background-color: #fef6f9 !important; /* Ek dam halka sa soft pink shade */
+    box-shadow: 0 4px 20px rgba(168, 42, 87, 0.06); /* Halka pinkish premium shadow */
+    border-bottom: 1px solid #fce4ec !important;
 }
 
 .main-navbar .navbar-nav .nav-link {
@@ -91,13 +92,11 @@ html {
     transition: color 0.3s ease;
 }
 
-/* Hover & Active Pink Color Effect */
 .main-navbar .navbar-nav .nav-link:hover,
 .main-navbar .navbar-nav .nav-link.active {
     color: var(--pink-dark, #a82a57) !important;
 }
 
-/* Sleek Bottom Indicator Line for Active & Hover Links (Desktop view) */
 @media (min-width: 992px) {
     .main-navbar .navbar-nav .nav-link::after {
         content: '';
