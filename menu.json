@@ -1,0 +1,664 @@
+[
+    {
+        "id": "main-course",
+        "name": "Main Course",
+        "icon": "fa-utensils",
+        "items": [
+            {
+                "title": "Qorma (Mutton)",
+                "description": "Traditional rich and aromatic wedding-style mutton qorma cooked in pure ghee.",
+                "price": 850,
+                "oldPrice": 950,
+                "image": "images/main-course/mutton-qorma.jpg"
+            },
+            {
+                "title": "Qorma (Chicken)",
+                "description": "Flavorful and tender chicken qorma prepared with rich yogurt and spices.",
+                "price": 600,
+                "oldPrice": 680,
+                "image": "images/main-course/chicken-qorma.jpg"
+            },
+            {
+                "title": "Kashmiri Gosht",
+                "description": "Authentic Kashmiri style mutton cooked with signature aromatic spices.",
+                "price": 900,
+                "oldPrice": 1000,
+                "image": "images/main-course/empty-matka.jpg"
+            },
+            {
+                "title": "Dam ka Qeema",
+                "description": "Slow-cooked coal-smoked minced meat prepared with special herbs.",
+                "price": 550,
+                "oldPrice": 620,
+                "image": "images/main-course/dam-ka-qeema.jpg"
+            },
+            {
+                "title": "Kharay Masalay Ka Qeema",
+                "description": "Spicy minced meat tossed with chunky whole spices and onions.",
+                "price": 580,
+                "oldPrice": 650,
+                "image": "images/main-course/kharay-masalay-ka-qeema.jpg"
+            },
+            {
+                "title": "Achari Qeema",
+                "description": "Tangy and flavorful qeema prepared with traditional pickled spices.",
+                "price": 560,
+                "oldPrice": 630,
+                "image": "images/main-course/achari-qeema.jpg"
+            },
+            {
+                "title": "Chicken Qeema",
+                "description": "Delicious minced chicken cooked homestyle with tomatoes and green chilies.",
+                "price": 500,
+                "oldPrice": 560,
+                "image": "images/main-course/chicken-qeema.jpg"
+            },
+            {
+                "title": "Stew",
+                "description": "Hearty meat stew cooked with rich onions, whole spices, and tender pieces.",
+                "price": 800,
+                "oldPrice": 900,
+                "image": "images/main-course/stew.jpg"
+            },
+            {
+                "title": "Dhuwa Gosht",
+                "description": "Smoky charcoal-infused tender mutton cooked in a thick masala gravy.",
+                "price": 920,
+                "oldPrice": 1020,
+                "image": "images/main-course/dhuwa-gosht.jpg"
+            },
+            {
+                "title": "Dahi Koftay",
+                "description": "Soft and juicy meat meatballs simmered in a smooth, tangy yogurt gravy.",
+                "price": 600,
+                "oldPrice": 680,
+                "image": "images/main-course/dahi-koftay.jpg"
+            },
+            {
+                "title": "Shahi Koftay",
+                "description": "Royal meat koftas prepared in a rich, creamy, and nutty gravy.",
+                "price": 650,
+                "oldPrice": 730,
+                "image": "images/main-course/empty-matka.jpg"
+            },
+            {
+                "title": "Gravy Walay Salan",
+                "description": "Classic home-style comforting curry prepared with rich aromatic gravy.",
+                "price": 450,
+                "oldPrice": 520,
+                "image": "images/main-course/empty-matka.jpg"
+            },
+            {
+                "title": "Nihari",
+                "description": "Slow-cooked traditional beef/mutton stew with rich marrow and deep flavors.",
+                "price": 750,
+                "oldPrice": 850,
+                "image": "images/main-course/nihari.jpg"
+            },
+            {
+                "title": "Paye",
+                "description": "Traditional trotters slow-cooked overnight in a rich, gelatinous curry.",
+                "price": 700,
+                "oldPrice": 800,
+                "image": "images/main-course/paaye.jpg"
+            },
+            {
+                "title": "Maghaz",
+                "description": "Delicate brain masala sautéed with butter, onions, and fresh green herbs.",
+                "price": 650,
+                "oldPrice": 720,
+                "image": "images/main-course/empty-matka.jpg"
+            },
+            {
+                "title": "Mutton Makhni",
+                "description": "Tender mutton chunks tossed in a rich, buttery, and creamy tomato sauce.",
+                "price": 950,
+                "oldPrice": 1050,
+                "image": "images/main-course/empty-matka.jpg"
+            },
+            {
+                "title": "Chicken Makhni",
+                "description": "Butter chicken loaded with rich cream, butter, and mild spices.",
+                "price": 680,
+                "oldPrice": 750,
+                "image": "images/main-course/empty-matka.jpg"
+            },
+            {
+                "title": "Mutton Leg",
+                "description": "Special whole roasted/cooked tender mutton leg with special feast spices.",
+                "price": 1800,
+                "oldPrice": 2000,
+                "image": "images/main-course/empty-matka.jpg"
+            },
+            {
+                "title": "Chanps",
+                "description": "Juicy, well-marinated grilled or cooked mutton/beef chops.",
+                "price": 950,
+                "oldPrice": 1050,
+                "image": "images/main-course/empty-matka.jpg"
+            },
+            {
+                "title": "Biryani",
+                "description": "Fragrant basmati rice layered with spiced chicken and aromatic herbs.",
+                "price": 450,
+                "oldPrice": 520,
+                "image": "images/main-course/empty-matka.jpg"
+            },
+            {
+                "title": "Afghani Pulao",
+                "description": "Traditional sweet and savory rice dish topped with carrots and raisins.",
+                "price": 650,
+                "oldPrice": 730,
+                "image": "images/main-course/empty-matka.jpg"
+            },
+            {
+                "title": "Pulao",
+                "description": "Simple, aromatic, and flavorful meat broth infused rice.",
+                "price": 400,
+                "oldPrice": 460,
+                "image": "images/main-course/empty-matka.jpg"
+            },
+            {
+                "title": "BBQ Rice",
+                "description": "Smoky BBQ flavored chicken served over seasoned fried rice.",
+                "price": 600,
+                "oldPrice": 680,
+                "image": "images/main-course/empty-matka.jpg"
+            },
+            {
+                "title": "Singaporean Rice",
+                "description": "Layered delight with noodles, rice, chicken gravy, mayonnaise, and garlic sauce.",
+                "price": 650,
+                "oldPrice": 730,
+                "image": "images/main-course/empty-matka.jpg"
+            }
+        ]
+    },
+
+
+    {
+        "id": "daal-sabzi",
+        "name": "Daal / Sabzi",
+        "items": [
+            {
+                "title": "Daal Chana",
+                "description": "Delicious and traditional homemade daal chana prepared with special spices.",
+                "price": 350,
+                "oldPrice": 400,
+                "image": "images/daal-sabzi/daal-channa.jpg"
+            },
+            {
+                "title": "Daal Maash",
+                "description": "Soft and tasty daal maash cooked with authentic desi style.",
+                "price": 380,
+                "oldPrice": 430,
+                "image": "images/daal-sabzi/daal-mash.jpg"
+            },
+            {
+                "title": "Bhuni Daal Mash",
+                "description": "Flavorful bhuni daal maash with rich tempering and herbs.",
+                "price": 400,
+                "oldPrice": 450,
+                "image": "images/daal-sabzi/bhuni-daal-mash.jpg"
+            },
+            {
+                "title": "Mix Daal",
+                "description": "A wholesome mix of various lentils cooked together to perfection.",
+                "price": 320,
+                "oldPrice": 370,
+                "image": "images/daal-sabzi/mix-daal.jpg"
+            },
+            {
+                "title": "Khati Daal",
+                "description": "Tangy and flavorful traditional khati daal.",
+                "price": 330,
+                "oldPrice": 380,
+                "image": "images/daal-sabzi/khati-daal.jpg"
+            },
+            {
+                "title": "Special Daal Makhni",
+                "description": "Creamy and rich special daal makhni prepared with butter and cream.",
+                "price": 450,
+                "oldPrice": 500,
+                "image": "images/daal-sabzi/daal-makhni.jpg"
+            },
+            {
+                "title": "Mix Sabzi",
+                "description": "Fresh seasonal mixed vegetables cooked with delicate spices.",
+                "price": 350,
+                "oldPrice": 400,
+                "image": "images/daal-sabzi/mix-sabzi.jpg"
+            },
+            {
+                "title": "Makhni Sabzi",
+                "description": "Rich and buttery makhni sabzi with a delightful taste.",
+                "price": 420,
+                "oldPrice": 470,
+                "image": "images/daal-sabzi/makhni-subzi.jpg"
+            },
+            {
+                "title": "Bengan Bharta",
+                "description": "Smoky roasted eggplant mashed and cooked with onions and tomatoes.",
+                "price": 360,
+                "oldPrice": 410,
+                "image": "images/daal-sabzi/began-bharta.jpg"
+            },
+            {
+                "title": "Aloo Bhurta",
+                "description": "Spiced mashed potatoes prepared with traditional home recipe.",
+                "price": 300,
+                "oldPrice": 350,
+                "image": "images/daal-sabzi/aaloo-bharta.jpg"
+            },
+            {
+                "title": "Aloo Matar",
+                "description": "Classic comfort food made with potatoes and green peas.",
+                "price": 340,
+                "oldPrice": 390,
+                "image": "images/daal-sabzi/aaloo-matar.jpg"
+            },
+            {
+                "title": "Bhindi",
+                "description": "Fresh tender okra cooked with onions and spices.",
+                "price": 350,
+                "oldPrice": 400,
+                "image": "images/daal-sabzi/bhindi.jpg"
+            },
+            {
+                "title": "Dahi Bengan",
+                "description": "Eggplants cooked in a rich, tangy yogurt-based gravy.",
+                "price": 380,
+                "oldPrice": 430,
+                "image": "images/daal-sabzi/dahi-baigan.jpg"
+            },
+            {
+                "title": "Loki ki Sabzi",
+                "description": "Healthy and light bottle gourd curry prepared homestyle.",
+                "price": 320,
+                "oldPrice": 370,
+                "image": "images/daal-sabzi/loki-ki-sabzi.jpg"
+            }
+        ]
+    },
+
+    {
+        "id": "hi-tea",
+        "name": "Hi Tea",
+        "icon": "fa-mug-hot",
+        "items": [
+            {
+                "title": "Pizza",
+                "description": "Delicious freshly baked mini pizzas with rich toppings and melted cheese.",
+                "price": 550,
+                "oldPrice": 620,
+                "image": "images/hi-tea/pizza.jpg"
+            },
+            {
+                "title": "Burgers",
+                "description": "Juicy and flavorful bite-sized mini burgers with tender chicken patties.",
+                "price": 450,
+                "oldPrice": 500,
+                "image": "images/hi-tea/burger.jpg"
+            },
+            {
+                "title": "Box Patties",
+                "description": "Crispy golden box patties stuffed with savory chicken filling.",
+                "price": 300,
+                "oldPrice": 350,
+                "image": "images/hi-tea/box-patties.jpg"
+            },
+            {
+                "title": "Shawarma",
+                "description": "Tasty mini shawarma rolls packed with seasoned chicken and sauces.",
+                "price": 380,
+                "oldPrice": 430,
+                "image": "images/hi-tea/shawarma.jpg"
+            },
+            {
+                "title": "Fajita Wraps",
+                "description": "Spicy chicken fajita wraps wrapped in soft tortillas.",
+                "price": 420,
+                "oldPrice": 480,
+                "image": "images/hi-tea/fajita-wraps.jpg"
+            },
+            {
+                "title": "Lasagne",
+                "description": "Layers of pasta with rich minced meat sauce and cheesy goodness.",
+                "price": 600,
+                "oldPrice": 680,
+                "image": "images/hi-tea/lasagne.jpg"
+            },
+            {
+                "title": "Chicken Cheese Balls",
+                "description": "Crispy exterior with a gooey, melted cheese and chicken center.",
+                "price": 450,
+                "oldPrice": 500,
+                "image": "images/hi-tea/chicken-cheese-ball.jpg"
+            },
+            {
+                "title": "Cheese Balls",
+                "description": "Pure cheesy delight coated in crispy breadcrumbs and fried golden.",
+                "price": 400,
+                "oldPrice": 450,
+                "image": "images/hi-tea/cheese-ball.jpg"
+            },
+            {
+                "title": "Chicken Cutlets",
+                "description": "Savory chicken cutlets prepared with traditional spices and herbs.",
+                "price": 350,
+                "oldPrice": 400,
+                "image": "images/hi-tea/chicken-cutlets.jpg"
+            },
+            {
+                "title": "Bhel Puri",
+                "description": "Crispy, tangy, and spicy street-style bhel puri snack.",
+                "price": 250,
+                "oldPrice": 300,
+                "image": "images/hi-tea/bhel-puri.jpg"
+            },
+            {
+                "title": "Chana Chaat",
+                "description": "Refreshing chana chaat tossed with fresh onions, tomatoes, and chutneys.",
+                "price": 280,
+                "oldPrice": 330,
+                "image": "images/hi-tea/chana-chaat.jpg"
+            },
+            {
+                "title": "Aloo Chaat",
+                "description": "Tangy spiced potato chaat tossed with special herbs and chutneys.",
+                "price": 250,
+                "oldPrice": 300,
+                "image": "images/hi-tea/aloo-chaat.jpg"
+            },
+            {
+                "title": "Fruit Chaat",
+                "description": "A refreshing mix of seasonal fresh fruits with a sweet and tangy touch.",
+                "price": 320,
+                "oldPrice": 370,
+                "image": "images/hi-tea/fruit-chat.jpg"
+            },
+            {
+                "title": "Dahi Bhallay",
+                "description": "Soft lentil dumplings soaked in creamy yogurt topped with tangy chutneys.",
+                "price": 350,
+                "oldPrice": 400,
+                "image": "images/hi-tea/dahi-bhallay.jpg"
+            },
+            {
+                "title": "Peri Bites",
+                "description": "Stuffed green chillies wrapped in chicken and cheese, crumb-fried.",
+                "price": 500,
+                "oldPrice": 560,
+                "image": "images/hi-tea/peri-bites.jpg"
+            },
+            {
+                "title": "Chicken Wonton",
+                "description": "Crispy fried wontons filled with spiced minced chicken.",
+                "price": 400,
+                "oldPrice": 450,
+                "image": "images/hi-tea/chicken-wonton.jpg"
+            },
+            {
+                "title": "Chicken Cheese Wonton",
+                "description": "Wontons packed with savory chicken and rich melted cheese.",
+                "price": 450,
+                "oldPrice": 500,
+                "image": "images/hi-tea/chicken-cheese-wonton.jpg"
+            },
+            {
+                "title": "BBQ Roll",
+                "description": "Smoky BBQ flavored chicken wrapped in a crispy paratha/roll.",
+                "price": 380,
+                "oldPrice": 430,
+                "image": "images/hi-tea/bbq-roll.jpg"
+            },
+            {
+                "title": "Spring Roll",
+                "description": "Crunchy vegetable and chicken spring rolls fried to perfection.",
+                "price": 300,
+                "oldPrice": 350,
+                "image": "images/hi-tea/spring-roll.jpg"
+            },
+            {
+                "title": "Chicken Roll",
+                "description": "Classic chicken roll loaded with tasty sauces and vegetables.",
+                "price": 350,
+                "oldPrice": 400,
+                "image": "images/hi-tea/empty-plate.jpg"
+            },
+            {
+                "title": "Chicken Cheese Roll",
+                "description": "Juicy chicken roll enhanced with a layer of gooey melted cheese.",
+                "price": 400,
+                "oldPrice": 450,
+                "image": "images/hi-tea/chicken-cheese-roll.jpg"
+            },
+            {
+                "title": "Malai Boti Roll",
+                "description": "Creamy malai boti pieces wrapped with special creamy sauces.",
+                "price": 420,
+                "oldPrice": 470,
+                "image": "images/hi-tea/malai-boti-roll.jpg"
+            },
+            {
+                "title": "Beef Roll",
+                "description": "Tender spiced beef strips wrapped in a crispy outer layer.",
+                "price": 450,
+                "oldPrice": 500,
+                "image": "images/hi-tea/beef-roll.jpg"
+            },
+            {
+                "title": "Chicken Samosa",
+                "description": "Crispy traditional triangular samosas filled with savory chicken.",
+                "price": 280,
+                "oldPrice": 320,
+                "image": "images/hi-tea/chicken-samosa.jpg"
+            },
+            {
+                "title": "Chicken Cheese Samosa",
+                "description": "Crispy samosas stuffed with seasoned chicken and gooey cheese.",
+                "price": 330,
+                "oldPrice": 380,
+                "image": "images/hi-tea/chicken-cheese-samosa.jpg"
+            },
+            {
+                "title": "Aloo Samosa",
+                "description": "Classic potato-filled crispy samosas with traditional spices.",
+                "price": 220,
+                "oldPrice": 260,
+                "image": "images/hi-tea/aloo-samosa.jpg"
+            },
+            {
+                "title": "Beef Samosa",
+                "description": "Crispy golden samosas filled with flavorful minced beef.",
+                "price": 320,
+                "oldPrice": 370,
+                "image": "images/hi-tea/beef-samosa.jpg"
+            },
+            {
+                "title": "Nuggets",
+                "description": "Crispy, tender homemade chicken nuggets kids and adults love.",
+                "price": 350,
+                "oldPrice": 400,
+                "image": "images/hi-tea/nuggets.jpg"
+            },
+            {
+                "title": "Bbq Sandwich",
+                "description": "Grilled BBQ chicken sandwich layered with sauces and crisp veggies.",
+                "price": 380,
+                "oldPrice": 430,
+                "image": "images/hi-tea/bbq-sandwich.jpg"
+            },
+            {
+                "title": "Chicken Sandwich",
+                "description": "Classic creamy chicken spread sandwich toasted to perfection.",
+                "price": 350,
+                "oldPrice": 400,
+                "image": "images/hi-tea/chicken-sandwich.jpg"
+            },
+            {
+                "title": "Club Sandwich",
+                "description": "Triple-decker club sandwich packed with chicken, egg, and fresh veggies.",
+                "price": 480,
+                "oldPrice": 550,
+                "image": "images/hi-tea/club-sandwich.jpg"
+            },
+            {
+                "title": "Dynamite Chicken",
+                "description": "Crispy chicken chunks coated in signature spicy dynamite sauce.",
+                "price": 550,
+                "oldPrice": 620,
+                "image": "images/hi-tea/dynamite-chicken.jpg"
+            },
+            {
+                "title": "Dynamite Prawns",
+                "description": "Succulent prawns tossed in rich, creamy, and spicy dynamite sauce.",
+                "price": 750,
+                "oldPrice": 850,
+                "image": "images/hi-tea/dynamite-prawns.jpg"
+            },
+            {
+                "title": "Chicken Soup",
+                "description": "Warm, comforting clear chicken soup loaded with shredded chicken and veggies.",
+                "price": 300,
+                "oldPrice": 350,
+                "image": "images/hi-tea/empty-plate.jpg"
+            },
+            {
+                "title": "Hot n Sour Soup",
+                "description": "Spicy and tangy traditional hot and sour soup with chicken chunks.",
+                "price": 350,
+                "oldPrice": 400,
+                "image": "images/hi-tea/empty-plate.jpg"
+            }
+        ]
+    },
+
+    {
+        "id": "desserts",
+        "name": "Desserts",
+        "icon": "fa-ice-cream",
+        "items": [
+            {
+                "title": "Shahi Tukray",
+                "description": "Rich and royal Pakistani dessert made with fried bread slices, creamy milk, and dry fruits.",
+                "price": 350,
+                "oldPrice": 400,
+                "image": "images/dessert/shahi-tukray.jpg"
+            },
+            {
+                "title": "Shahi Kheer",
+                "description": "Traditional slow-cooked rice pudding flavored with cardamom and garnished with nuts.",
+                "price": 320,
+                "oldPrice": 370,
+                "image": "images/dessert/shahi-kheer.jpg"
+            },
+            {
+                "title": "Mango Delight",
+                "description": "Creamy and refreshing dessert layered with sweet mango chunks and rich cream.",
+                "price": 450,
+                "oldPrice": 500,
+                "image": "images/dessert/mango-delight.jpg"
+            },
+            {
+                "title": "Chocolate Delight",
+                "description": "Indulgent dessert cup loaded with rich chocolate layers and smooth cream.",
+                "price": 480,
+                "oldPrice": 530,
+                "image": "images/dessert/chocolate-delight.jpg"
+            },
+            {
+                "title": "Trifle",
+                "description": "Classic layered dessert with sponge cake, jelly, custard, and fruit cocktail.",
+                "price": 380,
+                "oldPrice": 430,
+                "image": "images/dessert/trifle.jpg"
+            },
+            {
+                "title": "Cherry Crunch",
+                "description": "Delicious sweet dessert topped with cherries and a crunchy texture.",
+                "price": 420,
+                "oldPrice": 470,
+                "image": "images/dessert/cherry-church.jpg"
+            },
+            {
+                "title": "Pineapple Surprise",
+                "description": "Creamy dessert featuring sweet pineapple chunks and delightful layers.",
+                "price": 400,
+                "oldPrice": 450,
+                "image": "images/dessert/empty-plate.jpg"
+            },
+            {
+                "title": "Chocolate Dessert",
+                "description": "Decadent chocolate dessert crafted for chocolate lovers.",
+                "price": 450,
+                "oldPrice": 500,
+                "image": "images/dessert/chocolate-dessert.jpg"
+            },
+            {
+                "title": "Dahi Dessert",
+                "description": "Sweetened creamy yogurt dessert prepared with traditional flair.",
+                "price": 300,
+                "oldPrice": 350,
+                "image": "images/dessert/dahi-dessert.jpg"
+            },
+            {
+                "title": "Short Glasses Dessert",
+                "description": "Elegantly served layered dessert in individual short glasses.",
+                "price": 450,
+                "oldPrice": 500,
+                "image": "images/dessert/empty-plate.jpg"
+            },
+            {
+                "title": "Chocolate Mousse",
+                "description": "Light, airy, and rich chocolate mousse melting in every bite.",
+                "price": 460,
+                "oldPrice": 520,
+                "image": "images/dessert/chocolate-moouse.jpg"
+            },
+            {
+                "title": "Gajar Ka Halwa",
+                "description": "Warm winter favorite made with grated carrots, milk, ghee, and khoya.",
+                "price": 400,
+                "oldPrice": 450,
+                "image": "images/dessert/gajar-ka-halwa.jpg"
+            },
+            {
+                "title": "Chanay Ki Daal Ka Halwa",
+                "description": "Rich traditional desi sweet prepared with split chickpea lentils and pure ghee.",
+                "price": 450,
+                "oldPrice": 500,
+                "image": "images/dessert/channay-ki-daal-ka-halwa.jpg"
+            },
+            {
+                "title": "Besan Ka Halwa",
+                "description": "Comforting gram flour halwa cooked with aromatic ghee and dry fruits.",
+                "price": 380,
+                "oldPrice": 430,
+                "image": "images/dessert/besan-ka-halwa.jpg"
+            },
+            {
+                "title": "Loki Ka Halwa",
+                "description": "Unique and delicious sweet delicacy made from fresh bottle gourd.",
+                "price": 380,
+                "oldPrice": 430,
+                "image": "images/dessert/lauki-ka-halwa.jpg"
+            },
+            {
+                "title": "Gond Makhany Ka Halwa",
+                "description": "Nutritious and healthy traditional winter dessert loaded with edible gum and fox nuts.",
+                "price": 550,
+                "oldPrice": 620,
+                "image": "images/dessert/gond-makhany-ka-halwa.jpg"
+            },
+            {
+                "title": "Piniri",
+                "description": "Traditional wholesome sweet bites made with wheat flour, desi ghee, and nuts.",
+                "price": 500,
+                "oldPrice": 560,
+                "image": "images/dessert/pinjri.jpg"
+            }
+        ]
+    }
+    
+]

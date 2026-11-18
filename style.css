@@ -1094,3 +1094,53 @@ a.toggle-review-btn:hover {
     box-shadow: 0 0 30px rgba(233, 30, 99, 0.7); 
 }
 
+
+
+/* Menu Page */
+
+/* Category Sidebar Styling */
+.category-sidebar .nav-link {
+    color: #495057;
+    background-color: #f8f9fa;
+    border: 1px solid #eee;
+    transition: all 0.3s ease;
+}
+
+.category-sidebar .nav-link:hover {
+    background-color: #fce4ec;
+    color: var(--pink-dark, #a82a57);
+    border-color: #f8bbd0;
+}
+
+/* Active Category Pill Highlight (Pink Theme) */
+.category-sidebar .nav-link.active {
+    background-color: var(--pink-dark, #a82a57) !important;
+    color: #ffffff !important;
+    border-color: var(--pink-dark, #a82a57) !important;
+    box-shadow: 0 4px 15px rgba(168, 42, 87, 0.25);
+}
+
+
+/* Menu Items Scrollable Container (Sirf Y-Axis Scroll, X-Axis Bilkul Band) */
+#dynamicTabContent {
+    max-height: 650px;
+    overflow-y: auto !important;     /* Sirf vertical scroll allow karega */
+    overflow-x: hidden !important;   /* Horizontal scroll ko mukammal block kar dega */
+    width: 100%;                     /* Container ko row ke andar fit rakhega */
+    padding-right: 15px;             /* Cards aur scroll area mein proper gap ke liye */
+}
+
+/* Scrollbar ko modern aur clean banane ke liye (Pink Bar hatane ka tareeqa) */
+#dynamicTabContent::-webkit-scrollbar {
+    width: 6px;                      /* Sirf patli si Y-axis line banayega */
+    background: transparent;
+}
+
+#dynamicTabContent::-webkit-scrollbar-thumb {
+    background: var(--pink-light, #f8bbd0); /* Halka pink thumb jo bura nahi lagega */
+    border-radius: 10px;
+}
+
+#dynamicTabContent::-webkit-scrollbar-thumb:hover {
+    background: var(--pink-dark, #a82a57);
+}
