@@ -44,7 +44,7 @@
                 "description": "Tangy and flavorful qeema prepared with traditional pickled spices.",
                 "price": 560,
                 "oldPrice": 630,
-                "image": "images/main-course/achari-qeema.jpg"
+                "image": "images/main-course/achaari-qeema.jpg"
             },
             {
                 "title": "Chicken Qeema",
@@ -241,7 +241,7 @@
                 "description": "Smoky roasted eggplant mashed and cooked with onions and tomatoes.",
                 "price": 360,
                 "oldPrice": 410,
-                "image": "images/daal-sabzi/began-bharta.jpg"
+                "image": "images/daal-sabzi/bengan-bharta.jpg"
             },
             {
                 "title": "Aloo Bhurta",
@@ -522,14 +522,14 @@
                 "description": "Warm, comforting clear chicken soup loaded with shredded chicken and veggies.",
                 "price": 300,
                 "oldPrice": 350,
-                "image": "images/hi-tea/empty-plate.jpg"
+                "image": "images/hi-tea/chicken-soup.jpg"
             },
             {
                 "title": "Hot n Sour Soup",
                 "description": "Spicy and tangy traditional hot and sour soup with chicken chunks.",
                 "price": 350,
                 "oldPrice": 400,
-                "image": "images/hi-tea/empty-plate.jpg"
+                "image": "images/hi-tea/hot-n-sour-soup.jpg"
             }
         ]
     },
@@ -579,14 +579,14 @@
                 "description": "Delicious sweet dessert topped with cherries and a crunchy texture.",
                 "price": 420,
                 "oldPrice": 470,
-                "image": "images/dessert/cherry-church.jpg"
+                "image": "images/dessert/cherry-crunch.jpg"
             },
             {
                 "title": "Pineapple Surprise",
                 "description": "Creamy dessert featuring sweet pineapple chunks and delightful layers.",
                 "price": 400,
                 "oldPrice": 450,
-                "image": "images/dessert/empty-plate.jpg"
+                "image": "images/dessert/pineapple-surprise.jpg"
             },
             {
                 "title": "Chocolate Dessert",
@@ -607,7 +607,7 @@
                 "description": "Elegantly served layered dessert in individual short glasses.",
                 "price": 450,
                 "oldPrice": 500,
-                "image": "images/dessert/empty-plate.jpg"
+                "image": "images/dessert/short-glasses-dessert.jpg"
             },
             {
                 "title": "Chocolate Mousse",
@@ -652,7 +652,7 @@
                 "image": "images/dessert/gond-makhany-ka-halwa.jpg"
             },
             {
-                "title": "Piniri",
+                "title": "Pinijri",
                 "description": "Traditional wholesome sweet bites made with wheat flour, desi ghee, and nuts.",
                 "price": 500,
                 "oldPrice": 560,
